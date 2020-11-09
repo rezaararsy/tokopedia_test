@@ -26,7 +26,7 @@ class App extends Component {
           </Navbar.Collapse>
         </Navbar>
         <Container>
-          <Route exact path="/" component={Beranda} />
+          <Route path="/" component={Beranda} />
           <Route path="/detail/:name" component={Detail} />
           <Route path="/mypokemon" component={MyPokemon} />
         </Container>
