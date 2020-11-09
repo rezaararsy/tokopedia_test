@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <Router>
         <Navbar bg="light" expand="lg">
-          <Navbar.Brand href="/">Pokedex by Reza Ararsy</Navbar.Brand>
+          <Navbar.Brand href="/tokopedia_test/">Pokedex by Reza Ararsy</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
@@ -26,7 +26,7 @@ class App extends Component {
           </Navbar.Collapse>
         </Navbar>
         <Container>
-          <Route path="/" component={Beranda} />
+          <Route exact path="/tokopedia_test/" component={Beranda} />
           <Route path="/detail/:name" component={Detail} />
           <Route path="/mypokemon" component={MyPokemon} />
         </Container>
